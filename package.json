@@ -9,10 +9,9 @@
   },
   "author": "Gabriela Knop Marques",
   "license": "ISC",
-  "dependencies": {
-    "parcel": "^2.9.3",
+  "devDependencies": {
     "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
     "posthtml-include": "^1.7.4"
-  },
-  "devDependencies": {}
+  }
 }
