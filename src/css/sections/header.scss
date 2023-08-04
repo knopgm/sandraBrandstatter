@@ -1,5 +1,5 @@
 .page-header {
-  // background-color: lightgray;
+  background-color: lightgray;
   display: flex;
   justify-content: right;
   align-items: center;
@@ -11,6 +11,26 @@
   padding: 0 1rem;
 
   @media all and (min-width: 840px) {
-    justify-content: center;
+    justify-content: right;
+  }
+}
+
+.logo {
+  z-index: 100;
+  background-color: antiquewhite;
+  height: 60px;
+  align-items: center;
+  display: flex;
+  position: absolute;
+  left: 1rem;
+}
+
+.navigation-list {
+  list-style: none;
+  padding: 0;
+
+  @media all and (min-width: 840px) {
+    display: flex;
+    gap: 30px;
   }
 }
