@@ -39,10 +39,6 @@
 
 .project__image-wrapper {
   margin: 0 auto;
-
-  & :hover {
-    background-color: white;
-  }
 }
 
 @keyframes fade-in {
@@ -68,10 +64,42 @@
   display: block;
 }
 
+.project__title__wrapper {
+  background-color: red;
+  display: flex;
+  justify-content: center;
+}
+
+.project__title {
+  position: absolute;
+  color: white;
+  top: 85%;
+  font-size: xxx-large;
+  font-weight: bold;
+  opacity: 0;
+  transition: all 300ms;
+  z-index: 6;
+}
+
 .project__image {
   height: 100%;
   position: relative;
   overflow: hidden;
+
+  &:after {
+    display: flex;
+    justify-content: baseline;
+    content: "";
+
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 500ms;
+  }
 }
 
 .project__image img {
@@ -81,4 +109,22 @@
   object-fit: cover;
   top: 0;
   left: 0;
+}
+
+.gallery__row__item:hover {
+  .project__image {
+    &:after {
+      opacity: 1;
+    }
+  }
+
+  .project__image img {
+    transition: all 500ms ease-in;
+    transform: scale(1.02);
+  }
+
+  .project__title {
+    transition: opacity 300ms ease-in-out;
+    opacity: 1;
+  }
 }
