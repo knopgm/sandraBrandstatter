@@ -1,0 +1,36 @@
+.footer_wrapper {
+  padding: 0 1rem;
+}
+
+.line {
+  height: 0.05555555555555555rem;
+  background-color: #000000;
+}
+
+.footer-grid {
+  display: grid;
+  padding: 2rem 0;
+  gap: 1.5rem;
+}
+
+.copyright {
+  padding: 0.5rem 0;
+}
+
+.work_enquires-email {
+  display: block;
+}
+@media screen and (min-width: 1170px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+
+  .title {
+    padding-bottom: 0.5rem;
+  }
+
+  .copyright {
+    text-align: end;
+  }
+}
