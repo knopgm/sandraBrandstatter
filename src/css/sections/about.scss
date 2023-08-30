@@ -8,6 +8,10 @@
   flex-direction: column-reverse;
   gap: 1.5rem;
   padding: 1.5rem 0;
+
+  & h1 {
+    font-size: 1.5em;
+  }
 }
 
 .about-grid {
@@ -44,7 +48,7 @@
   display: flex;
   justify-content: center;
   top: 0;
-  right: 1rem;
+  // right: 1rem;
   overflow: hidden;
 }
 
@@ -88,10 +92,15 @@
     // background-color: aquamarine;
     display: grid;
     grid-template-columns: 2fr 1fr;
-    padding: 3rem 0 2rem;
+    padding: 3rem 0 1rem;
+
+    & h1 {
+      font-size: 2em;
+    }
   }
   .about-grid {
-    grid-template-columns: 3fr 1fr 2fr;
+    grid-template-columns: 6fr 2fr;
+    gap: 100px;
   }
 
   .about-text-selected_wrapper {
@@ -101,5 +110,15 @@
 
   .about_subtitle {
     padding: 2rem 0 0.5rem;
+  }
+
+  .avatar_wrapper img {
+    justify-content: end;
+    width: 60%;
+  }
+
+  .work-enquires_wrapper {
+    background-color: aquamarine;
+    justify-content: center;
   }
 }
