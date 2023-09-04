@@ -17,6 +17,10 @@
   display: block;
 }
 @media screen and (min-width: 1170px) {
+  .footer_wrapper {
+    padding: 0;
+  }
+
   .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: 32px;

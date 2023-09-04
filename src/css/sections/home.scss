@@ -31,6 +31,9 @@
 
 //Desktop
 @media screen and (min-width: 769px) {
+  .gallery__row {
+    padding: 0 0 1rem;
+  }
   .gallery__row--default {
     grid-template-columns: 5fr 3fr;
   }
