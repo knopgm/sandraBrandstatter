@@ -1,4 +1,5 @@
 //Mobile (Default)
+
 .project-text_wrapper {
   padding: 0 1rem;
   // background-color: aqua;
@@ -13,20 +14,18 @@
 }
 
 .project-page_grid {
-  // background-color: burlywood;
   padding-top: 1rem;
-  border: black solid 0.02rem;
   max-width: 1500px;
+  display: grid;
+  gap: 1rem;
 }
 
 .project__row__wrapper-one_img {
   display: grid;
-  gap: 1rem;
-  padding: 0 1rem 1rem;
+  justify-self: center;
   grid-template-columns: 5fr;
   transition: transform 0.5s ease;
   width: 70%;
-  border: red solid 0.02rem;
 }
 
 .project__row__wrapper-two_img {
@@ -34,14 +33,14 @@
   gap: 1rem;
   padding: 0 1rem 1rem;
   grid-template-columns: 1fr;
-  border: red solid 0.02rem;
+  // border: red solid 0.02rem;
   // transform-origin: 0% 0%;
 }
 
 .project__row__item {
   height: 500px;
   width: 100%;
-  border: black solid 0.02rem;
+  // border: black solid 0.02rem;
 }
 .project__link {
   display: grid;
@@ -55,7 +54,6 @@
   &:after {
     display: flex;
     justify-content: baseline;
-    content: "";
 
     position: absolute;
     width: 100%;
@@ -71,7 +69,7 @@
 .project__image img {
   position: absolute;
   // width: 100%;
-  // height: 100%;
+  height: 100%;
   object-fit: cover;
   top: 0;
   left: 0;
@@ -86,19 +84,57 @@
 
 //Ipad
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .home-wrapper {
+    padding: 1rem 0;
+  }
+  .project-page_wrapper {
+    padding: 2rem 0 0;
+  }
+
+  .project-text_wrapper {
+    gap: 3rem;
+  }
+  .project_infos {
+    grid-template-columns: 1fr 1fr;
+    padding-bottom: 1rem;
+  }
+  .project-page_grid {
+    gap: 3rem;
+  }
+
   .project__row__wrapper-two_img {
     grid-template-columns: 1fr 1fr;
+    padding: 0 1rem 2rem;
+    gap: 2rem;
   }
 }
 
 //Desktop
 @media screen and (min-width: 769px) {
+  .project-page_wrapper {
+    padding: 0;
+  }
+
+  .project-page_grid {
+    padding-top: 1rem;
+    max-width: 1500px;
+    display: grid;
+    gap: 4rem;
+  }
+
   .project-text_wrapper {
     grid-template-columns: 3fr 1fr;
-    padding: 2rem 1rem 3rem;
+    padding: 2rem 0 3rem;
+  }
+
+  .project__row__wrapper-one_img {
+    padding: 0 0 1rem;
+    padding: 0 1rem 1rem;
   }
 
   .project__row__wrapper-two_img {
+    gap: 4rem;
     grid-template-columns: 1fr 1fr;
+    padding: 0 0 4rem;
   }
 }
