@@ -1,0 +1,46 @@
+.nav__buttons_wrapper {
+  padding: 0 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.nav__button {
+  // background-color: aquamarine;
+  padding: 1rem;
+  display: flex;
+  gap: 0.8rem;
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+}
+
+.slide_right {
+  transition: 300ms ease-in-out;
+}
+.slide_left {
+  transition: 300ms ease-in-out;
+}
+.nav__button:hover,
+.info-slide:active {
+  color: coral;
+  // .slide_left {
+  //   margin: 0 10px 0 0;
+  // }
+
+  // .slide_right {
+  //   margin: 0 0 0 10px;
+  // }
+
+  @media screen and (min-width: 769px) {
+    .slide_left {
+      margin: 0 10px 0 0;
+    }
+
+    .slide_right {
+      margin: 0 0 0 10px;
+    }
+  }
+}
