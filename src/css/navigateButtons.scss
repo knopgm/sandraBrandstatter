@@ -1,5 +1,7 @@
-.nav__buttons_wrapper {
+.nav__buttons-page_wrapper {
   padding: 0 1rem;
+}
+.nav__buttons_wrapper {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -7,7 +9,7 @@
 
 .nav__button {
   // background-color: aquamarine;
-  padding: 1rem;
+  padding: 1rem 0;
   display: flex;
   gap: 0.8rem;
 }
@@ -31,21 +33,12 @@
     filter: invert(61%) sepia(45%) saturate(1500%) hue-rotate(325deg)
       brightness(100%) contrast(103%);
   }
-  // .slide_left {
-  //   margin: 0 10px 0 0;
-  // }
 
-  // .slide_right {
-  //   margin: 0 0 0 10px;
-  // }
+  .slide_left {
+    margin: 0 10px 0 0;
+  }
 
-  @media screen and (min-width: 769px) {
-    .slide_left {
-      margin: 0 10px 0 0;
-    }
-
-    .slide_right {
-      margin: 0 0 0 10px;
-    }
+  .slide_right {
+    margin: 0 0 0 10px;
   }
 }

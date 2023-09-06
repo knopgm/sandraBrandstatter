@@ -2,7 +2,6 @@
 
 .project-text_wrapper {
   padding: 0 1rem;
-  // background-color: aqua;
   display: grid;
   grid-template-columns: 1fr;
   gap: 4rem;
@@ -33,14 +32,11 @@
   gap: 1rem;
   padding: 0 1rem 1rem;
   grid-template-columns: 1fr;
-  // border: red solid 0.02rem;
-  // transform-origin: 0% 0%;
 }
 
 .project__row__item {
   height: 500px;
   width: 100%;
-  // border: black solid 0.02rem;
 }
 .project__link {
   display: grid;
@@ -50,20 +46,6 @@
   height: 100%;
   position: relative;
   overflow: hidden;
-
-  &:after {
-    display: flex;
-    justify-content: baseline;
-
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    bottom: 0;
-    left: 0;
-    background: rgba(0, 0, 0, 0.6);
-    opacity: 0;
-    transition: all 500ms;
-  }
 }
 
 .project__image img {
@@ -84,9 +66,6 @@
 
 //Ipad
 @media screen and (min-width: 480px) and (max-width: 768px) {
-  .home-wrapper {
-    padding: 1rem 0;
-  }
   .project-page_wrapper {
     padding: 2rem 0 0;
   }
@@ -112,7 +91,7 @@
 //Desktop
 @media screen and (min-width: 769px) {
   .project-page_wrapper {
-    padding: 0;
+    padding: 0 1rem;
   }
 
   .project-page_grid {

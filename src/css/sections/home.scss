@@ -14,12 +14,15 @@
 
 //Ipad
 @media screen and (min-width: 480px) and (max-width: 768px) {
+  .gallery__row {
+    padding: 0 1rem 2rem;
+    gap: 2rem;
+  }
   .gallery__row--default {
     grid-template-columns: 3fr 2fr;
   }
   .gallery__row--three-columns {
     grid-template-columns: 2fr 1fr;
-    gap: 1rem;
   }
   .mobile-hidden {
     display: none;
@@ -32,7 +35,8 @@
 //Desktop
 @media screen and (min-width: 769px) {
   .gallery__row {
-    padding: 0 0 1rem;
+    padding: 0 1rem 3rem;
+    gap: 3rem;
   }
   .gallery__row--default {
     grid-template-columns: 5fr 3fr;
