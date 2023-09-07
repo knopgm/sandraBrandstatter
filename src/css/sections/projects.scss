@@ -60,8 +60,11 @@
   transition: transform 2s, filter 1s ease-in-out;
 }
 
-.project__row__item:hover img {
-  transform: scale(1.03);
+.project__row__item:hover {
+  cursor: pointer;
+  img {
+    transform: scale(1.03);
+  }
 }
 
 //Ipad

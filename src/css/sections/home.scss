@@ -101,6 +101,8 @@
 }
 
 .gallery__row__item:hover {
+  cursor: pointer;
+
   .project__image {
     &:after {
       opacity: 1;

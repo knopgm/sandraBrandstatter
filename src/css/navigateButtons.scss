@@ -28,6 +28,7 @@
 }
 .nav__button:hover,
 .info-slide:active {
+  cursor: pointer;
   color: #ff7f50;
   .icons {
     filter: invert(61%) sepia(45%) saturate(1500%) hue-rotate(325deg)
