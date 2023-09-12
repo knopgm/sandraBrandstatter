@@ -75,7 +75,7 @@
   position: relative;
   overflow: hidden;
 
-  &:after {
+  .project__image__overlay {
     display: flex;
     justify-content: baseline;
     content: "";
@@ -104,7 +104,7 @@
   cursor: pointer;
 
   .project__image {
-    &:after {
+    .project__image__overlay {
       opacity: 1;
     }
   }
