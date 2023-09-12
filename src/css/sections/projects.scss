@@ -24,7 +24,7 @@
   justify-self: center;
   grid-template-columns: 5fr;
   transition: transform 0.5s ease;
-  width: 70%;
+  width: 90%;
 }
 
 .project__row__wrapper-two_img {
@@ -38,11 +38,9 @@
   height: 500px;
   width: 100%;
 }
-.project__link {
-  display: grid;
-}
 
 .project__image {
+  display: grid;
   height: 100%;
   position: relative;
   overflow: hidden;
@@ -84,6 +82,10 @@
     gap: 3rem;
   }
 
+  .project__row__wrapper-one_img {
+    width: 80%;
+  }
+
   .project__row__wrapper-two_img {
     grid-template-columns: 1fr 1fr;
     padding: 0 1rem 2rem;
@@ -110,6 +112,7 @@
   }
 
   .project__row__wrapper-one_img {
+    width: 70%;
     padding: 0 0 1rem;
     padding: 0 1rem 1rem;
   }
