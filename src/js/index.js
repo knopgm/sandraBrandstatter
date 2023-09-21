@@ -1,8 +1,6 @@
 // Target all fade-in-bottom elements
 const scrollElements = document.querySelectorAll(".fade-in-bottom");
 
-console.log(scrollElements);
-
 const elementInView = (el, percentageScroll = 100) => {
   const elementTop = el.getBoundingClientRect().top;
 
@@ -13,14 +11,14 @@ const elementInView = (el, percentageScroll = 100) => {
   );
 };
 
+// Add scrolled class list to the element
 const displayScrollElement = (element) => {
   element.classList.add("scrolled");
-  console.log("add");
 };
 
+// Remove scrolled class list to the element
 const hideScrollElement = (element) => {
   element.classList.remove("scrolled");
-  console.log("remove");
 };
 
 const handleScrollAnimation = () => {
