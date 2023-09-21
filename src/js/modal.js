@@ -3,7 +3,7 @@ const modal = document.getElementById("myModal");
 
 // Get the button that opens the modal
 const openModal = document.querySelectorAll("img");
-const openImgModal = document.getElementById("image");
+const openImgModal = modal.querySelector("img");
 
 // Get the <span> element that closes the modal
 const span = document.getElementsByClassName("close")[0];
