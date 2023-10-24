@@ -1,8 +1,12 @@
 //Mobile (Default)
 .gallery__row {
+  --spacing-sm: 1rem;
+  --spacing-md: 2rem;
+  --spacing-lg: 3rem;
+
   display: grid;
-  gap: 1rem;
-  padding: 0 1rem 1rem;
+  margin-bottom: var(--spacing-sm);
+  gap: var(--spacing-sm);
   grid-template-columns: 1fr;
   // transform-origin: 0% 0%;
 }
@@ -15,8 +19,8 @@
 //Ipad
 @media screen and (min-width: 480px) and (max-width: 768px) {
   .gallery__row {
-    padding: 0 1rem 2rem;
-    gap: 2rem;
+    margin-bottom: var(--spacing-md);
+    gap: var(--spacing-md);
   }
   .gallery__row--default {
     grid-template-columns: 3fr 2fr;
@@ -35,8 +39,8 @@
 //Desktop
 @media screen and (min-width: 769px) {
   .gallery__row {
-    padding: 0 1rem 3rem;
-    gap: 3rem;
+    margin-bottom: var(--spacing-lg);
+    gap: var(--spacing-lg);
   }
   .gallery__row--default {
     grid-template-columns: 5fr 3fr;
@@ -74,6 +78,7 @@
   height: 100%;
   position: relative;
   overflow: hidden;
+  display: block;
 
   .project__image__overlay {
     display: flex;
@@ -160,7 +165,4 @@
     transform: translateY(0);
     opacity: 1;
   }
-}
-.project__link {
-  display: block;
 }

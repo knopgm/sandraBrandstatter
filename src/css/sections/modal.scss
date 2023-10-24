@@ -6,13 +6,15 @@
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.7); /* Black w/ opacity */
+  background-color: #302134; /* Black w/ opacity */
 }
 
 /* Modal Content/Box */
 .modal-content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: end;
+  padding: 1rem;
   width: 100%;
   height: 100%;
 }
@@ -34,35 +36,86 @@
 }
 
 /* The Close Button and arrows */
-.close {
-  position: absolute;
-  display: flex;
-}
-
 .arrow_wrapper {
   display: flex;
   height: 100%;
+  flex-wrap: wrap;
+  align-content: center;
 }
 
 .close,
-.arrow {
+.arrow,
+.arrow_left,
+.arrow_right {
   color: #cfcece;
   float: right;
   font-size: 2.5rem;
   font-weight: bold;
-  padding: 0 1rem;
+  padding-right: 1rem;
+}
+
+.close {
+  position: absolute;
+  display: flex;
+  top: 0;
+  right: 0;
+  padding: 0 1rem 1rem;
 }
 
 .arrow {
-  align-self: center;
-  padding: 12rem 1rem;
+  align-self: flex-end;
+  padding: 3rem 1rem 0;
 }
 
 .close:hover,
 .close:focus,
 .arrow:hover,
-.arrow:focus {
+.arrow:focus,
+.arrow_right:hover,
+.arrow_right:focus,
+.arrow_left:hover,
+.arrow_left:focus {
   color: white;
   text-decoration: none;
   cursor: pointer;
+}
+
+#arrow_left_id {
+  display: none;
+}
+.mobile-arrows_wrapper {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+//Desktop
+@media screen and (min-width: 480px) {
+  .modal-content {
+    flex-direction: unset;
+    align-items: center;
+    padding: 0;
+  }
+
+  .close {
+    padding: 0 1rem 2rem 2rem;
+  }
+
+  .arrow {
+    align-self: center;
+    padding: 12rem 1rem;
+  }
+
+  #arrow_left_id {
+    display: flex;
+  }
+
+  #arrow_left_mobile {
+    display: none;
+  }
+
+  .mobile-arrows_wrapper {
+    position: unset;
+  }
 }

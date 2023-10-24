@@ -1,5 +1,4 @@
 .footer_wrapper {
-  padding: 0 1rem;
   background-color: white;
 }
 
@@ -16,9 +15,13 @@
 .work_enquires-email {
   display: block;
 }
+
+.copyright {
+  font-size: small;
+}
+
 @media screen and (min-width: 1170px) {
   .footer_wrapper {
-    padding: 0 1rem;
   }
 
   .footer-grid {

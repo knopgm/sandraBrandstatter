@@ -1,0 +1,32 @@
+.stack {
+  display: flex;
+  flex-direction: column;
+
+  &--horizontal {
+    flex-direction: row;
+  }
+
+  &--space-between {
+    justify-content: space-between;
+  }
+
+  &--gap-xs {
+    gap: 0.5rem;
+  }
+
+  &--gap-sm {
+    gap: 1rem;
+  }
+
+  &--gap-md {
+    gap: 1.5rem;
+  }
+
+  &--gap-lg {
+    gap: 2rem;
+  }
+
+  &--gap-xl {
+    gap: 3rem;
+  }
+}
