@@ -62,15 +62,22 @@
   padding: 1rem;
   font-size: 30px;
 
-  &--arrow_left,
+  &--arrow_left {
+    position: unset;
+    padding: 100px 2rem 2rem 2rem;
+  }
+
   &--arrow_right {
     position: unset;
+    padding: 100px 2rem 2rem 2rem;
   }
 }
 
 .arrow {
   align-self: flex-end;
-  padding: 3rem 1rem 0;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 1rem;
 }
 
 .material-symbols-outlined:hover,
@@ -121,5 +128,14 @@
 
   .mobile-arrows_wrapper {
     position: unset;
+  }
+  .material-symbols-outlined {
+    &--arrow_left {
+      padding: 300px 2rem 300px 1rem;
+    }
+
+    &--arrow_right {
+      padding: 300px 1rem 300px 2rem;
+    }
   }
 }
