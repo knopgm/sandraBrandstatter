@@ -1,14 +1,39 @@
 <div id="myModal" class="modal">
   <div class="modal-content">
     <div class="arrow_wrapper">
-      <span id="arrow_left" class="arrow">&laquo;</span>
+      <div class="arrow">
+        <!-- <span id="arrow_left_id" class="arrow_left">&laquo;</span> -->
+        <span
+          id="arrow_left_desktop"
+          class="material-symbols-outlined material-symbols-outlined--arrow_left"
+        >
+          arrow_back_ios
+        </span>
+      </div>
     </div>
     <div class="modal__image_wrapper">
       <div class="modal__image"><img /></div>
     </div>
     <div class="arrow_wrapper">
-      <span class="close">&times;</span>
-      <span id="arrow_right" class="arrow">&raquo;</span>
+      <!-- <span class="close">&times;</span> -->
+      <span class="material-symbols-outlined material-symbols-outlined--close">
+        close
+      </span>
+      <div class="mobile-arrows_wrapper">
+        <div class="arrow">
+          <span
+            class="material-symbols-outlined material-symbols-outlined--arrow_right"
+          >
+            arrow_forward_ios
+          </span>
+          <!-- <span class="arrow_right">&raquo;</span> -->
+          <span
+            id="arrow_left_mobile"
+            class="material-symbols-outlined material-symbols-outlined--arrow_left"
+            >arrow_back_ios</span
+          >
+        </div>
+      </div>
     </div>
   </div>
 </div>
